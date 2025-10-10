@@ -1,0 +1,129 @@
+body, h1, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#e4e4e4;
+}
+
+body > header{
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 0;
+}
+
+body > nav{
+    margin: 0 5%;
+}
+
+nav ul, aside > section > ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 45%;
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li:nth-child(odd){
+    margin-right: 10%;
+}
+
+nav ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+nav ul li a:hover, main > article > a:hover, aside > section > li > a:hover{
+    color: rgb(219, 69, 83);
+}
+
+body > main{
+    margin: 5% 0;
+}
+
+main > h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main > article{
+    background-color: white;
+    border: 1px solid #cacaca;
+    margin-bottom: 20px;
+    padding: 0 5% 20px;
+    text-align: center;
+}
+
+main > article > img{
+    max-width: 100%;
+    max-height: 200px;
+}
+
+main > article > h3, main > article >p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+main > article > p{
+    font-size: 12px;
+}
+
+main > article > p:nth-child(4){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main > article > a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-color: #e4e4e4;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+aside {
+    margin: 0 5%;
+    border: 1px solid #cacaca;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+aside > section{
+    padding: 0 5% 20px;
+}
+
+aside > section > h2{
+    font-size: 18px;
+}
+
+aside > section > ul > li > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+
+aside > section > ul > li{
+    margin-bottom: 20px;
+}
+
+aside > section > ul > li > img{
+    width: 50px;
+    float: left;
+}
+
+footer {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
