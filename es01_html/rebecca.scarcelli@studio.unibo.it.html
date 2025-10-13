@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Contatti</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <div>
+                <fieldset><legend>Informazioni Anagrafiche</legend>
+                    <label for="name">Name: 
+                        <input type="text" id="name"/>
+                    </label><br/>
+                    <label for="surname">Surname: 
+                        <input type="text" id="surname"/>
+                    </label><br/>
+                    <label for="codF">Codice Fiscale: 
+                        <input type="text" id="codF"/>
+                    </label><br/>
+                    <label for="Bday">Data di nascita: 
+                        <input type="date" id="Bday"/>
+                    </label><br/>
+                    <label for="Bplace">Luogo di nascita: 
+                        <input type="text" id="Bplace"/>
+                    </label><br/>
+                    <label for="address">Indirizzo: 
+                        <input type="text" id="address"/>
+                    </label><br/>
+                </fieldset>
+                <fieldset><legend>Preferenze</legend>
+                    <label >Assicurazione:</label><br/>
+                    <label>
+                        <input type="radio" name="assicurazione" value="Primo Livello"/>
+                        Primo Livello
+                    </label><br/>
+                    <label>
+                        <input type="radio" name="assicurazione" value="Secondo Livello"/>
+                        Secondo Livello
+                    </label><br/>
+                    <label>
+                        <input type="radio" name="assicurazione" value="Terzo Livello"/>
+                        Terzo Livello
+                    </label><br/>
+                    <label for="mezzoPreferito">Scegliere mezzo: </label>
+                    <select id="mezzoPreferito" name="Mezzo Preferito">
+                        <option value="Auto">Automobile</option>
+                        <option value="Moto">Moto</option>
+                        <option value="Bici">Bicicletta</option>
+                        <option value="Mono">Monopattino</option>
+                    </select><br/>
+                    <label for="question">Automunito: 
+                        <input type="checkbox" id="question" value="opt1"/>
+                    </label><br/>
+                    <label for="descr"> 
+                        Descrizione:
+                    </label><br/>
+                    <textarea id="descr">Inserire descrizione</textarea>
+                </fieldset>
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
