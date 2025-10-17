@@ -7,7 +7,7 @@ body{
     background-color:#e4e4e4;
 }
 
-body > header{
+body > header, body > footer{
     background-color: rgb(54, 54, 54);
     color: #fff;
     text-align: center;
@@ -19,7 +19,7 @@ body > nav{
     margin: 0 5%;
 }
 
-nav ul, aside > section > ul{
+nav ul, aside > section > ul, form ul{
     list-style: none;
 }
 
@@ -45,20 +45,21 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li a:hover, main > article > a:hover, aside > section > li > a:hover{
+nav ul li a:hover, main > article > a:hover, aside > section > ul > li > a:hover, form input[type="submit"]:hover{
     color: rgb(219, 69, 83);
 }
 
 body > main{
-    margin: 5% 0;
+    margin:0 5%;
 }
 
 main > h2{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
 }
 
-main > article{
+main > article, main > section, main > form{
     background-color: white;
     border: 1px solid #cacaca;
     margin-bottom: 20px;
@@ -84,7 +85,7 @@ main > article > p:nth-child(4){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main > article > a{
+main > article > a, form input[type="submit"]{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     background-color: #e4e4e4;
@@ -94,7 +95,7 @@ main > article > a{
 }
 
 aside {
-    margin: 0 5%;
+    margin: 0 5% 20px;
     border: 1px solid #cacaca;
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -123,7 +124,83 @@ aside > section > ul > li > img{
     float: left;
 }
 
-footer {
-    background-color: rgb(54, 54, 54);
-    color: white;
+footer{
+    margin-top: 10px;
+}
+
+/* CONTATTI */
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse; /*I bordi adiaceti vanno a formare un unico bordo*/
+    width: 100%;
+    margin: 20px;
+}
+
+table th, table td{
+    border: 1px solid #000;
+}
+
+main > section > table th{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*LOGIN*/
+form ul{
+    width: 80%;
+    margin: 0 10%;
+}
+
+form ul li{
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+main > form {
+    padding-top: 20px;
+}
+
+form ul li input:not([type="submit"]){
+    width: 50%;
+    box-sizing: border-box;
+}
+
+form ul li label{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    cursor: pointer;
+}
+
+form input[type="submit"]{
+    border-width: 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+
+    nav ul li{
+        width: 19%;
+    }
+
+    nav ul li:not(:last-child){
+        margin-right: 8%;
+    }
+
+    body > main{
+        width: 50%;
+        margin: 0 0 0 10%;
+    }
+
+    aside{
+        width: 25%;
+        margin-left: 5px;
+        margin: 80px 10% 20px 5%;
+        box-sizing: border-box;
+    }
+
+    main, aside{
+        display: inline-block;
+        vertical-align: top;
+    }
 }
