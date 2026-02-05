@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 01</title>
+</head>
+<body>
+    <main>
+        <form action="#" method="post">
+            <section>
+                <h1>Informazioni Anagrafiche</h1>
+                <p>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="nome" id="name" aria-label="inserire nome" placeholder="scrivi qui il tuo nome"/>
+                </p>
+                <p>
+                    <label for="surname">Cognome: </label>
+                    <input type="text" name="cognome" id="surname" aria-label="inserire cognome" placeholder="scrivi qui il tuo cognome"/>
+                </p>
+                <p>
+                    <label for="codFiscale">Codice Fiscale: </label>
+                    <input type="text" name="cf" id="codFiscale" aria-label="inserire codice Fiscale" placeholder="Scrivi il tuo codice fiscale"/>
+                </p>
+                <p>
+                    <label for="birthDate">Data di nascita: </label>
+                    <input type="date" name="dataNascita" id="birthDate" aria-label="Seleziona la tua data di nascita" />
+                </p>
+                <p>
+                    <label for="birthPlace">Luogo di nascita: </label>
+                    <input type="text" name="luogo di nascita" id="birthPlace" aria-label="inserire luogo di nascita" placeholder="Scrivi il tuo luogo id nascita"/>
+                </p>
+                <p>
+                    <label for="indirizzo">Indirizzo: </label>
+                    <input type="text" name="indirizzo" id="indirizzo" aria-label="inserire indirizzo" placeholder="Scrivi il tuo indirizzo"/>
+                </p>
+            </section>
+            <section>
+                <h1>Preferenze</h1>
+                <fieldset>
+                    <legend>Assicurazione</legend>
+                    <p>
+                        <label for="First">Primo livello</label>
+                        <input type="radio" name="assicurazione" value="Primo Livello" id="First"/>
+                    </p>
+                    <p>
+                        <label for="Second">Secondo Livello</label>
+                        <input type="radio" name="assicurazione" value="Secondo Livello" id="Second"/>
+                    </p>
+                    <p>
+                        <label for="Third">Terzo Livello</label>
+                        <input type="radio" name="assicurazione" value="Terzo Livello" id="Third"/>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Mezzo preferito</legend>
+                    <label for="mezzoPreferito">Scegliere mezzo: </label>
+                    <select id="mezzoPreferito" name="Mezzo Preferito">
+                        <option value="Auto">Automobile</option>
+                        <option value="Moto">Moto</option>
+                        <option value="Bici">Bicicletta</option>
+                        <option value="Mono">Monopattino</option>
+                    </select>
+                </fieldset>
+                <p>
+                    <label for="question">Automunito</label>
+                    <input type="checkbox" name="automunito" id="question" aria-label="Specificare se si è automuniti"/>
+                </p>
+                <p>
+                    <label for="descr">Descrizione</label>
+                    <textarea name="descrizione" id="descr">Inserire una descrizione</textarea>
+                </p>
+            </section>
+            <label for="submit">Invia</label>
+            <input type="submit" value="invia" aria-label="invia" id="submit"/>
+            <label for="reset">Cancella</label>
+            <input type="reset" value="cancella" aria-label="cancella" id="reset" />
+        </form>
+    </main>
+</body>
+</html>

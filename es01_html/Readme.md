@@ -9,5 +9,3 @@ Scrivere il codice HTML5 **valido, ben formato, accessibile (WCAG 2.0, livello A
         - Automunito (checkbox).
         - Descrizione (textarea).
     3. Bottoni di Submit e Cancella della form.
-
-**NB: IL NOME DEL FILE DEVE ESSERE _vostraemailunibo.html_**
