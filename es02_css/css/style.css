@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+
+/*Header*/
+header{
+    width: 100%;
+    background: linear-gradient(to bottom right, pink, yellow, pink, violet);
+    border-bottom: 5px solid #6B2C91;
+    padding: 40px 20px;
+    margin: 0
+}
+
+header h1 {
+    color: purple;
+    text-align: right;
+}
+
+section,
+aside{
+    display: inline-block;
+}
+
+aside,
+nav{
+    float: left;
+}
+
+/*Section*/
+section {
+    width: 50%;
+    vertical-align: top;
+    padding: 20px;
+    margin: 10px;
+    background: white;
+}
+
+section p {
+    text-align: left;
+    color: black;
+    padding: 0.5%;
+}
+
+/*Aside*/
+aside {
+    width: 20%;
+    vertical-align: top;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+
+aside p {
+    color: purple;
+    padding: 2%;
+}
+
+/*Nav*/
+nav {
+    width: 15%;
+    background: linear-gradient(to bottom right, pink, yellow, pink, violet);
+    border-top: 5px solid #6B2C91;
+    border-bottom: 5px solid #6B2C91;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+nav ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+nav ul li{
+    margin-bottom: 15px;
+}
+
+
+nav:hover{
+    background: linear-gradient(to bottom right, purple, pink, yellow, pink);
+}
+
+nav a:hover {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    border-top: 5px solid #6B2C91;
+    padding: 20px;
+    background: linear-gradient(to bottom right, purple, pink, yellow, pink);
+}
+
+footer p{
+    color: purple;
+    text-align: center;
+    font-size: 80%;
+}
