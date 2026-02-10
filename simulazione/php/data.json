@@ -1,0 +1,45 @@
+[  {
+    "name": "Harry Potter",
+    "species": "human",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "31-07-1980",
+    "yearOfBirth": 1980,
+    "ancestry": "half-blood",
+    "eyeColour": "green",
+    "hairColour": "black"
+  },
+  {
+    "name": "Hermione Granger",
+    "species": "human",
+    "gender": "female",
+    "house": "Gryffindor",
+    "dateOfBirth": "19-09-1979",
+    "yearOfBirth": 1979,
+    "ancestry": "muggleborn",
+    "eyeColour": "brown",
+    "hairColour": "brown"
+  },
+  {
+    "name": "Ron Weasley",
+    "species": "human",
+    "gender": "male",
+    "house": "Gryffindor",
+    "dateOfBirth": "01-03-1980",
+    "yearOfBirth": 1980,
+    "ancestry": "pure-blood",
+    "eyeColour": "blue",
+    "hairColour": "red"
+  },
+  {
+    "name": "Draco Malfoy",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "05-06-1980",
+    "yearOfBirth": 1980,
+    "ancestry": "pure-blood",
+    "eyeColour": "grey",
+    "hairColour": "blonde"
+  }
+]

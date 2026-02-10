@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    font-size: 100%;
+}
+
+table{
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1% solid blue;
+    width: 100%;
+    margin: 2% 0;
+}

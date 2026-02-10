@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio HTML</title>
+    <link rel="stylesheet" href="soluzione_css.css">
+</head>
+<body>
+    <main>
+        <h1>Prenotazione Volo</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>
+                    <h2>Dati Anagrafici</h2>
+                </legend>
+                <p>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="nome" id="name" placeholder="Inserire nome"/>
+                </p>
+                <p>
+                    <label for="surname">Cognome: </label>
+                    <input type="text" name="cognome" id="surname" placeholder="Inserire cognome"/>
+                </p>
+                <p>
+                    <label for="birthday">Selezionare la data di nascita: </label>
+                    <input type="date" name="Data di nascita" id="birthday"/>
+                </p>
+                <p>
+                    <label for="place">Nazionalità: </label>
+                    <input type="text" name="nazionalità" id="place" placeholder="Inserire nazionalità"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Dati volo</h2>
+                </legend>
+                <p>
+                    <label for="andata">Aereoporto di andata: </label>
+                    <input type="text" name="aereoporto andata" id="andata" placeholder="Inserire aereoporto di andata"/>
+                </p>
+                <p>
+                    <label for="ritorno">Aereoporto di ritorno: </label>
+                    <input type="text" name="aereoporto ritorno" id="ritorno" placeholder="Inserire aereoporto di ritorno"/>
+                </p>
+                <p>
+                    <label for="passeggeri">Selezionare numero di passeggeri (max 5): </label>
+                    <input type="text" name="passeggeri" id="passeggeri" placeholder="selezionare numero passeggeri"/>
+                </p>
+                <fieldset>
+                    <legend>Tipo di viaggio</legend>
+                    <p>
+                        <input type="radio" name="tipo viaggio" id="andata-ritorno" value="Adata e ritorno" checked/>
+                        <label for="andata-ritorno">Andata e ritorno</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="tipo viaggio" id="sola-andata" value="Sola andata"/>
+                        <label for="sola-andata">Sola Andata</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opzioni di viaggio</legend>
+                        <p>
+                        <input type="radio" id="economy" name="classe" value="economy" checked>
+                        <label for="economy">Economy</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="premium-economy" name="classe" value="premium-economy">
+                        <label for="premium-economy">Premium Economy</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="business" name="classe" value="business">
+                        <label for="business">Business</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="prima-classe" name="classe" value="prima-classe">
+                        <label for="prima-classe">Prima Classe</label>
+                    </p>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Flessibilità sulle date</legend>
+                    <p>
+                        <input type="checkbox" id="date-flessibili" name="date_flessibili">
+                        <label for="date-flessibili">Sono flessibile sulle date (±3 giorni)</label>
+                    </p>
+                </fieldset>
+            </fieldset>
+            <p>
+                <button type="submit">Prenota Volo</button>
+                <button type="reset">Cancella Form</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

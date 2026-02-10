@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+}
+
+form{
+    width: 90%;
+    padding-left: 5%;
+    border: 5px dashed darkorange;
+}
+
+fieldset{
+    color: darkorange;
+    border: 2px solid darkorange;
+    box-shadow: -5px -5px  10px orange;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    background-color: DarkOrange;
+    color: white;
+    box-sizing: border-box;
+}
+
+label{
+    color: darkorange;
+    font-weight: bold;
+}
+
+button{
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;   
+}
+
+button:hover{
+    background-color: white;
+    color: darkorange;
+    font-weight: bold;
+}

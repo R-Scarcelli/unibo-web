@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esercizioCss.css">
+    <title>Rebecca.Scarcelli</title>
+</head>
+<body>
+    <table>
+        <caption>Appelli d'esame</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col" id="attività">Attività Formative</th>
+                <th colspan="2" scope="col" id="data">Data e ora</th>
+                <th colspan="2" scope="col" id="campus">Campus</th>
+                <th colspan="2" scope="col" id="iscritti">Iscritti</th>
+            </tr>
+            <tr>
+                <th scope="col" id="codice" headers="attività">Codice</th>
+                <th scope="col" id="nome" headers="attività">Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="attività codice">41731</td>
+                <td headers="attività nome">TECNOLOGIE WEB</td>
+                <td headers="data">21 giugno 2017</td>
+                <td headers="campus">Cesena</td>
+                <td headers="iscritti">31</td>
+            </tr>
+            <tr>
+                <td headers="attività codice">28106</td>
+                <td headers="attività nome">INFORMATICA PER LE SCIENZE AMBIENTALI</td>
+                <td rowspan="3" headers="data">29 giugno 2017</td>
+                <td rowspan="3" headers="campus">Ravenna</td>
+                <td headers="iscritti">17</td>
+            </tr>
+            <tr>
+                <td headers="attività codice">58157</td>
+                <td headers="attività nome">ABILITA’ INFORMATICHE</td>
+                <td headers="iscritti">2</td>
+            </tr>
+            <tr>
+                <td headers="attività codice">37487</td>
+                <td headers="attività nome">COMPUTER SCIENCE APPLICATIONS TO CULTURAL HERITAGE</td>
+                <td headers="iscritti">5</td>
+            </tr>
+            <tr>
+                <td headers="attività codice">17667</td>
+                <td headers="attività nome">SISTEMI MULTIMEDIALI</td>
+                <td headers="data">21 giugno 2017</td>
+                <td headers="campus">Cesena</td>
+                <td headers="iscritti">6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row" id="totale">Totale iscritti</th>
+                <td headers="iscritti totale">61</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
