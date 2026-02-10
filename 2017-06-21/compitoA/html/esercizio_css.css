@@ -1,0 +1,42 @@
+body{
+    font-family: Arial;
+    font-size: 100%;
+}
+
+table,
+table td,
+table th{
+    border: 2px solid blue;
+    padding: 1%;
+    font-size: 1.5em;
+}
+
+table{
+    border-collapse: separate;
+    border-radius: 15px;
+    width: 100%;
+    margin: 2% 0;
+}
+
+caption {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+table>thead th{
+    background-color: blue;
+    color: white;
+}
+
+table td{
+    text-align: right;
+}
+
+tfoot{
+    background-color: orange;
+    color: black;
+    text-shadow: 5px 5px 5px blue;
+    text-align: center;
+}
