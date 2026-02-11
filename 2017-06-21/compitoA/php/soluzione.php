@@ -9,14 +9,14 @@ if($conn->connect_error){
 $A = isset($_GET['A']) ? $_GET['A'] : null;
 $B = isset($_GET['B']) ? $_GET['B'] : null;
 
+//Converto il valore in intero
+$A = intval($A);
+$B = intval($B);
+
 //Controllo che le variabili siano valide e non nulle
 if($A === null || $B === null || !is_numeric($A) || !is_numeric($B) || $A <=0 || $B <=0) {
     die("A e B non devono assumere dei valori interi positivi");
 }
-
-//Conveerto il valore in intero
-$A = intval($A);
-$B = intval($B);
 
 //Controllo che gli insiemi esistano nel database
 $stmt = $conn->prepare("SELECT DISTINCT FROM insiemi WHERE insieme = ? OR insieme = ?");

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esercizio_css.css">
+    <title>Esercizio html</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5" scope="col" id="title">Appelli d'esame</th>
+            </tr>
+            <tr>
+                <th colspan="2" scope="col" id="activity" headers="title">Attività Formative</th>
+                <th rowspan="2" scope="col" id="date" headers="title">Data e ora</th>
+                <th rowspan="2" scope="col" id="place" headers="title">Campus</th>
+                <th rowspan="2" scope="col" id="people" headers="title">Iscritti</th>
+            </tr>
+            <tr>
+                <th scope="col" id="code" headers="title activity">Codice</th>
+                <th scope="col" id="name" headers="title activity">Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="title activity code">41731</td>
+                <td headers="title activity name">TECNOLOGIE WEB</td>
+                <td headers="title date">12 luglio 2017</td>
+                <td headers="title place">Cesena</td>
+                <td headers="title people">30</td>
+            </tr>
+            <tr>
+                <td headers="title activity code">28106</td>
+                <td headers="title activity name">INFORMATICA PER LE SCIENZE AMBIENTALI</td>
+                <td rowspan="3" headers="title date">17 luglio 2017</td>
+                <td rowspan="3" headers="title place">Ravenna</td>
+                <td headers="title people">15</td>  
+            </tr>
+            <tr>
+                <td headers="title activity code">58157</td>
+                <td headers="title activity name">ABILITA’ INFORMATICHE</td>
+                <td headers="title people">3</td>  
+            </tr>
+            <tr>
+                <td headers="title activity code">37487</td>
+                <td headers="title activity name">COMPUTER SCIENCE APPLICATIONS TO CULTURAL HERITAGE</td>
+                <td headers="title people">7</td>  
+            </tr>
+            <tr>
+                <td headers="title activity code">17667</td>
+                <td headers="title activity name">SISTEMI MULTIMEDIALI</td>
+                <td headers="title date">30 giugno 2017</td>
+                <td headers="title place">Cesena</td>
+                <td headers="title people">5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row" headers="title" id="total">Totale iscritti</th>
+                <td headers="title people total">60</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

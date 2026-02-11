@@ -1,0 +1,32 @@
+body{
+    font-family: Arial;
+    font-size: 100%;
+}
+
+table{
+    box-sizing: border-box;
+    border-collapse: separate;
+    width: 100%;
+    border: 10px solid darkgreen;
+    border-radius: 15px;
+    margin: 0%;
+    padding: 0%;
+    border-spacing: 0;
+    text-align: center;
+}
+
+table th,
+table td{
+    border: 3px solid darkgreen;   
+}
+
+thead th{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+tfoot{
+    background-color: yellow;
+    text-shadow: 5px 5px 5px darkgreen;
+}
