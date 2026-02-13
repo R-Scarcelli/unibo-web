@@ -1,0 +1,42 @@
+nav{
+    float: right;
+    width: 20%;
+}
+
+nav li{
+    list-style: circle;
+    line-height: 2em;
+}
+
+nav a:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+footer,
+header{
+    box-shadow: 5px 5px 5px darkgreen;
+    text-align: center;
+}
+
+footer,
+header,
+section{
+    width: 70%;
+}
+
+nav,
+header,
+footer{
+    border: 2px solid green;
+}
+
+header{
+    background-color: lightgreen;
+}
+
+footer{
+    clear: both;
+    color: darkgreen;
+    font-size: 0.5em;
+}

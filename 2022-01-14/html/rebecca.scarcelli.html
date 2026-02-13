@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio html</title>
+</head>
+<body>
+    <table style="border: 2px solid black;">
+        <caption>Appelli d'esame</caption>
+        <thead style="border: 2px solid black;">
+            <tr>
+                <th scope="col" id="day" style="border: 2px solid black;">Giorno</th>
+                <th scope="col" id="room" style="border: 2px solid black;">Aula</th>
+                <th scope="col" id="ora1" style="border: 2px solid black;">9:00-10:00</th>
+                <th scope="col" id="ora2" style="border: 2px solid black;">10:00-11:00</th>
+                <th scope="col" id="ora3" style="border: 2px solid black;">11:00-12:00</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border: 2px solid black;">
+                <th rowspan="2" scope="row" headers="day" id="day1" style="border: 2px solid black;">Lunedì</th>
+                <th scope="row" headers="room day1" id="aula1" style="border: 2px solid black;">Aula 2.9</th>
+                <td colspan="2" headers="day1 room ora1 ora2 aula1" style="border: 2px solid black;">Sistemi Operativi</td>
+                <td headers="day1 room ora3 aula1" style="border: 2px solid black;">Informatica e diritto</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <th scope="row" headers="room" id="aula2" style="border: 2px solid black;">Laboratorio 3.1</th>
+                <td headers="day1 aula2 room ora1" style="border: 2px solid black;">Reti</td>
+                <td colspan="2" headers="day1 aula2 room ora2 ora3" style="border: 2px solid black;">Basi di dati</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <th rowspan="2" scope="row" headers="day" id="day2" style="border: 2px solid black;">Martedì</th>
+                <th scope="row" headers="room day1" id="aula3" style="border: 2px solid black;">Aula 2.5</th>
+                <td headers="day2 room ora1" style="border: 2px solid black;">Programmazione</td>
+                <td headers="day2 room ora2 aula3" style="border: 2px solid black;">Analisi matematica</td>
+                <td headers="day2 room ora3 aula3" style="border: 2px solid black;">Algoritmi e strutture dati</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+                <th scope="row" headers="room" id="aula4" style="border: 2px solid black;">Laboratorio 3.3</th>
+                <td colspan="2" headers="day2 aula4 room ora1 ora2" style="border: 2px solid black;">Tecnologie web</td>
+                <td headers="day2 aula4 room ora3" style="border: 2px solid black;">Programmazione ad Oggetti</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

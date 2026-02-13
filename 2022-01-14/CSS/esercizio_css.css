@@ -1,0 +1,49 @@
+body{
+    font-family: Arial;
+    font-size: 100%;
+}
+
+header,
+footer,
+nav{
+    background-color:  lightgreen;
+    border: 2px dotted green;
+}
+
+header,
+footer{
+    text-align: center;
+}
+
+header,
+nav,
+footer{
+    box-shadow: 5px 5px 5px gray;
+}
+
+header{
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+
+h1{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+nav{
+    float: right;
+    width: 20%;
+}
+
+section{
+    box-sizing: border-box;
+    width: 80%;
+    padding-right: 5%;
+}
+
+footer{
+    clear: both;
+    color: black;
+    width: 100%;
+}
